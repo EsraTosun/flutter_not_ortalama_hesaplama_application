@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proje_iki_dinamik_not_ortalama_hesaplama/constants/app_constants.dart';
-import 'package:proje_iki_dinamik_not_ortalama_hesaplama/widgets/ortalama_hesapla_page.dart';
+import 'package:proje_iki_dinamik_not_ortalama_hesaplama/widgets/ortalama_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,8 +19,11 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         //Flutter farklı ortamlarda da çalıştığı için o ortama uygun görünmesini sağlar
       ),
-      home: OrtalamaHesaplaPage(),
+      home: OrtalamaHesapla(),
     );
   }
 }
+
+
+
 
