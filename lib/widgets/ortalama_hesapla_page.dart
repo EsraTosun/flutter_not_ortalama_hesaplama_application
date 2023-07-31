@@ -35,10 +35,7 @@ class _OrtalamaHesaplaPageState extends State<OrtalamaHesaplaPage> {
             children: [
               Expanded(   //Geri kalan yayılması için denir
                 flex: 2,
-                child: Container(
-                  child: _buildForm(),
-                  color: Colors.purple,
-                ),
+                child: _buildForm(),
               ),
               Expanded(   //Geri kalan yayılması için denir
                 flex: 1,
@@ -83,10 +80,10 @@ class _OrtalamaHesaplaPageState extends State<OrtalamaHesaplaPage> {
   _buildTextFromField() {
     return TextFormField(
       decoration: InputDecoration.collapsed(
-          hintText: 'Matematik',
-        border: OutlineInputBorder(
-
-        ),
+        hintText: 'Matematik',
+        border: OutlineInputBorder(borderRadius: Sabitler.borderRadius),
+        filled: true,
+        fillColor: Sabitler.anaRenk.shade100.withOpacity(0.3)
       ),
     );
   }
